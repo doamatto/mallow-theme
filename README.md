@@ -4,7 +4,7 @@
 
 **This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
 
-Mallow is a simple one-pager theme that puts emphesis on simplicty and speed.
+Mallow is a simple one-pager Jekyll theme that puts emphasis on simplicity and speed.
 
 ### Installation
 
