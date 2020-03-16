@@ -1,27 +1,26 @@
 lang: en-GB # Site language
-title: "Mallow" # Site name; SEO
+title: "Mallow for Jekyll" # Site name; SEO
 description: "Mallow is a simple one-pager theme that puts emphesis on simplicty and speed." # Site description; SEO
 author: "doamatto" # For SEO
 favicon: "/assets/logo.svg" # Add a favicon.
 
-tagline: "Mallow for Jekyll"
 navigation: # Control the Navigation Bar
   - title: Home
     url: /
   - title: About Mallow
-    url: /about-nano/
+    url: "#about-mallow"
   - title: About Creators
-    url: /about/
+    url: "#about-creators"
 
 webSource: "https://github.com/doamatto/mallow-theme" # Contribution Link
 copyrightName: [ "doamatto" ] # Text for after copyright
 copyrightYear: [ "2018-2020" ] # Overwrite the updating year counter
 footerLinks: # Control the Footer Links
-  - title: Imprint
+  - title: Imprint.
     url: "https://doamatto.xyz/imprint"
-  - title: Privacy Policy
+  - title: Privacy Policy.
     url: "https://doamatto.xyz/privacy"
-  - title: Contact
+  - title: Contact.
     url: "https://doamatto.xyz/contact"
 
 # Don't edit below this line

@@ -1,0 +1,31 @@
+// Main Colour
+$LIGHTbgColour: #fff;
+$DARKbgColour: #000;
+$accentColour: #f62c43;
+
+// Header Colours (also uses $accentColour)
+$headerTextColour: #000;
+
+// Navigation Colours
+$navColour: #000;
+$navHoverColour: #fff;
+
+// Text Colour
+$LIGHTtextColour: #000;
+$LIGHTlinkColour: #000;
+$LIGHTlinkHoverColour: #f62c43;
+$DARKtextColour: #fff;
+$DARKlinkColour: #fff;
+$DARKlinkHoverColour: #f62c43;
+$LIGHTnewsLinkColour: #f62c43;
+$DARKnewsLinkColour: #f62c43;
+
+// Typography & Misc.
+$font: 'Inter', sans-serif;
+$font-regular: 400;
+$font-bold: 700;
+$font-italic: italic;
+$breakColour: #fff;
+
+// Switch this to whatever font you need, local or remote
+@import url('https://rsms.me/inter/inter.css');

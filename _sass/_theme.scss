@@ -1,0 +1,104 @@
+// Import configuration
+@charset "utf-8";
+@import "config";
+
+// Light and Dark Themes for Mobile
+@media (prefers-color-scheme: light) {
+    html {
+        background: $LIGHTbgColour;
+        color: $LIGHTtextColour;
+    }
+    a {
+        color: $LIGHTlinkColour;
+    }
+    a:hover {
+        color: $LIGHTlinkHoverColour;
+    }
+}
+
+@media screen and (max-height: 450px) {
+
+}
+
+html {
+    background: $DARKbgColour;
+    color: $DARKtextColour;
+}
+a {
+    color: $DARKlinkColour;
+}
+a:hover {
+    color: $DARKlinkHoverColour;
+}
+
+// Site Header (_includes/site-header.html)
+.sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 20px 10px 10px 20px;
+    background: $accentColour;
+    color: $headerTextColour;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    list-style: none;
+}
+
+.navLink {
+    padding: .25em 1em 1em .25em;
+    text-decoration: none;
+    color: $navColour;
+}
+
+.navLink:hover { color: $navHoverColour; }
+
+.sidebar h1 {
+    font-weight: $font-bold;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: .75em;
+    color: $navColour;
+}
+
+.footerLink {
+    text-decoration: underline;
+    color: $navColour;
+}
+
+.footerLink:hover { color: $navHoverColour; }
+
+.footer {
+    justify-content: left;
+    text-align: left;
+}
+
+// Typography and Misc.
+
+body {
+    font-family: $font;
+    font-weight: $font-regular;
+    font-size: 1.125em;
+    margin: -20px 0px 8px 0px;
+}
+
+.container {
+    margin-left: 240px;
+    padding: 1em 5em;
+    max-width: 40em;
+    display: block;
+}
+
+a { transition: color 500ms; text-decoration: none; }
+hr { color: $breakColour; }
+.bold { font-weight: $font-bold; }
