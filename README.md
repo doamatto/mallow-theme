@@ -2,8 +2,6 @@
 
 [![Gem Version](https://badge.fury.io/rb/mallow-theme.svg)](https://badge.fury.io/rb/mallow-theme)
 
-**This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
-
 Mallow is a simple one-pager Jekyll theme that puts emphasis on simplicity and speed.
 
 ### Installation
