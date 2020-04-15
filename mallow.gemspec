@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["doamatto"]
   spec.email = ["hello@doamatto.xyz"]
   spec.summary = "Mallow is a simple one-pager theme that puts emphesis on simplicty and speed."
-  spec.license = "GPL-3.0"
+  spec.license = "BSD-3-Clause"
   spec.metadata = {
     "plugin_type" => "theme",
     "changelog_uri" => "https://github.com/doamatto/mallow-theme/releases",
