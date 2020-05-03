@@ -33,13 +33,13 @@
 // Site Header (_includes/site-header.html)
 .sidebar {
     height: 100%;
-    width: 20vh;
+    width: 35vw;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    padding: 20px 10px 10px 20px;
+    padding: .5vh .5vh .5vh .5vh;
     background: $accentColour;
     color: $headerTextColour;
     display: flex;
@@ -52,7 +52,7 @@
 }
 
 .navLink {
-    padding: .25em 1em 1em .25em;
+    padding: 1vh 1vh 1vh 1vh;
     text-decoration: none;
     color: $navColour;
 }
@@ -92,9 +92,9 @@ body {
 }
 
 .container {
-    margin-left: 20vh;
+    margin-left: 35vw;
     padding: 1em 5em;
-    max-width: 40em;
+    max-width: 65vw;
     display: block;
 }
 
