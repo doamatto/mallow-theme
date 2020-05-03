@@ -8,7 +8,7 @@ Mallow is a simple one-pager theme that puts emphesis on simplicty and speed.
 
 # About Mallow
 
-_**This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**_
+**This is in active developement. [You can see the roadmap here.](https://trello.com/b/6uBEAJwj)**
 
 Mallow is a simple one-pager theme that puts emphesis on simplicty and speed.
 

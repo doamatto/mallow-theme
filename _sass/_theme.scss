@@ -31,6 +31,8 @@
 }
 
 // Site Header (_includes/site-header.html)
+
+.h { text-decoration: none !important; }
 .sidebar {
     height: 100%;
     width: 35vw;
@@ -54,7 +56,7 @@
 
 .navLink {
     padding: 1vh 1vh 1vh 1vh;
-    text-decoration: none;
+    text-decoration: underline;
     color: $navColour;
 }
 
@@ -63,7 +65,7 @@
 .sidebar h1 {
     font-weight: $font-bold;
     font-size: 1.25em;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .copyright {
@@ -99,6 +101,6 @@ body {
     display: block;
 }
 
-a { transition: color 500ms; text-decoration: none; }
+a { transition: color 500ms; text-decoration: underline; }
 hr { color: $breakColour; }
 .bold { font-weight: $font-bold; }
