@@ -8,24 +8,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if page.title == "" %}
-    <title>{{site.title}}</title>
-    <meta property="og:title" content="{{site.title}}">
-    {% else %}
-    <title>{{ page.title }} - {{ site.title }}</title>
-    <meta property="og:title" content="{{page.title}} - {{site.title}}">
-    {% endif %}
-    {% if page.description == "" %}
-    <meta name="description" content="{{site.description}}">
-    <meta property="og:description" content="{{site.description}}">
-    {% else %}
-    <meta name="description" content="{{page.description}}">
-    <meta property="og:description" content="{{page.description}}">
-    {% endif %}
+    <meta name="referrer" content="no-referrer, same-origin">
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {% if site.favicon %}
     <link rel="shortcut icon" href="{{ site.favicon }}">
+    <link rel="icon" href="{{site.favicon}}">
+    <link rel="apple-touch-icon" href="{{site.favicon}}">
     {% endif %}
+    {% include seo.html %}
   </head>
   <body>
     {{ content }}

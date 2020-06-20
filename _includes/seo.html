@@ -1,0 +1,25 @@
+{% if site.lang != "" %}
+<meta http-equiv="language" content="{{site.lang}}">
+<meta property="og:locale" content="{{site.lang}}">
+{% endif %}
+{% if page.title == "" %}
+<title>{{site.title}}</title>
+<meta property="og:title" content="{{site.title}}">
+<meta name="twitter:title" content="{{site.title}}">
+{% else %}
+<title>{{ page.title }} - {{ site.title }}</title>
+<meta property="og:title" content="{{page.title}} - {{site.title}}">
+<meta name="twitter:title" content="{{page.title}} - {{site.title}}">
+{% endif %}
+{% if page.description == "" %}
+<meta name="description" content="{{site.description}}">
+<meta property="og:description" content="{{site.description}}">
+<meta property="twitter:description" content="{{site.description}}">
+{% else %}
+<meta name="description" content="{{page.description}}">
+<meta property="og:description" content="{{page.description}}">
+<meta property="twitter:description" content="{{page.description}}">
+{% endif %}
+{% if site.url != "" %}
+<link rel="canonical" href="{{site.url}}{{page.url|replace:'index.html',''}}">
+{% endif %}
