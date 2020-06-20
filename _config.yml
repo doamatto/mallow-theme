@@ -1,26 +1,28 @@
-lang: en-GB # Site language
-title: "Mallow" # Site name; SEO
-description: "Mallow is a simple one-pager theme that puts emphesis on simplicty and speed." # Site description; SEO
-author: "doamatto" # For SEO
-favicon: "/assets/logo.svg" # Add a favicon.
+# Read more on how to setup your instance of Mallow: https://github.com/doamatto/mallow-theme/wiki
 
-navigation: # Control the Navigation Bar
+# Configure your SEO: https://github.com/doamatto/mallow-theme/wiki/Configuring-SEO
+lang: en-GB 
+title: "Mallow for Jekyll"
+description: "Mallow is a simple one-pager theme that puts emphesis on simplicty and speed."
+author: "doamatto"
+favicon: "/assets/logo.svg"
+
+# Configure your navigation and footer links: https://github.com/doamatto/mallow-theme/wiki/Configuring-Navigation-and-Footer-Links
+navigation:
   - title: Home
     url: /
-  - title: About
-    url: "#about-mallow"
+  - title: Installation
+    url: "#installation"
   - title: Creators
     url: "#about-creators"
-
-webSource: "https://github.com/doamatto/mallow-theme" # Contribution Link
-copyrightName: [ "doamatto" ] # Text for after copyright
-copyrightYear: [ "2018-2020" ] # Overwrite the updating year counter
-footerLinks: # Control the Footer Links
+footerLinks:
   - title: Contact.
     url: "https://doamatto.xyz/contact"
+webSource: "https://github.com/doamatto/mallow-theme"
+copyrightName: [ "doamatto" ]
+copyrightYear: [ "2018-2020" ]
 
 # Don't edit below this line
-
 exclude:
   - README.md
   - LICENSE
