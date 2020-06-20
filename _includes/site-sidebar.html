@@ -18,7 +18,7 @@
                 &copy; {% if copyrightYear %}{{copyrightYear}}{% else %}{{ site.time | date: '%Y' }}{% endif %} {{ site.copyrightName }}.
                 <br />
                 {% if site.webSource %}
-                <a class="footerLink" href="{{site.webSource}}">Contribute to this site.</a><br />
+                <a href="{{site.webSource}}">Contribute to this site.</a><br />
                 {% endif %}
                 {% for item in site.footerLinks %}
                     {% if item.url contains '://' %}
@@ -26,7 +26,7 @@
                     {% else %}
                         {% assign url = item.url | relative_url %}
                     {% endif %}
-                    <a href="{{url}}" class="footerLink">{{item.title}}</a>
+                    <a href="{{url}}">{{item.title}}</a>
                 {% endfor %}
             </p>
         </div>
