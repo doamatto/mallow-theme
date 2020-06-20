@@ -6,15 +6,16 @@ title: "Mallow for Jekyll"
 description: "Mallow is a simple one-pager theme that puts emphesis on simplicty and speed."
 author: "doamatto"
 favicon: "/assets/logo.svg"
+url: "https://doamatto.xyz/mallow-theme"
 
 # Configure your navigation and footer links: https://github.com/doamatto/mallow-theme/wiki/Configuring-Navigation-and-Footer-Links
 navigation:
   - title: Home
     url: /
   - title: Installation
-    url: "#installation"
+    url: "https://github.com/doamatto/mallow-theme#installation"
   - title: Creators
-    url: "#about-creators"
+    url: "/about-creators"
 footerLinks:
   - title: Contact.
     url: "https://doamatto.xyz/contact"
