@@ -32,7 +32,6 @@
 
 // Site Header (_includes/site-header.html)
 
-.h { text-decoration: none !important; }
 .sidebar {
     height: 100%;
     width: 35vw;
@@ -48,24 +47,21 @@
     justify-content: center;
     align-items: center;
     max-width: 270px;
+    a {
+      text-decoration: none;
+      color: $navColour;
+      :hover { color: $navHoverColour; }
+    }
+    h1 {
+      font-weight: $font-bold;
+      font-size: 1.25em;
+      text-decoration: none !important;
+    }
 }
 
 .links {
-    list-style: none;
-}
-
-.navLink {
-    padding: 1vh 1vh 1vh 1vh;
-    text-decoration: underline;
-    color: $navColour;
-}
-
-.navLink:hover { color: $navHoverColour; }
-
-.sidebar h1 {
-    font-weight: $font-bold;
-    font-size: 1.25em;
-    text-decoration: none !important;
+  padding: 1vh 1vh 1vh 1vh;
+  list-style: none;
 }
 
 .copyright {
@@ -76,9 +72,8 @@
 .footerLink {
     text-decoration: underline;
     color: $navColour;
+    :hover { color: $navHoverColour; }
 }
-
-.footerLink:hover { color: $navHoverColour; }
 
 .footer {
     justify-content: left;
@@ -101,6 +96,14 @@ body {
     display: block;
 }
 
-a { transition: color 500ms; text-decoration: underline; }
+a {
+  transition: color 500ms;
+  text-decoration: underline;
+}
+
 hr { color: $breakColour; }
-.bold { font-weight: $font-bold; }
+
+::selection {
+  background: $accentColour;
+  text-shadow: none;
+}
