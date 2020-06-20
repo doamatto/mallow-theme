@@ -48,10 +48,10 @@
     align-items: center;
     max-width: 270px;
     a {
-      text-decoration: none;
+      text-decoration: none !important;
       color: $navColour;
-      :hover { color: $navHoverColour; }
     }
+    a:hover { color: $navHoverColour !important; }
     h1 {
       font-weight: $font-bold;
       font-size: 1.25em;
@@ -67,12 +67,6 @@
 .copyright {
     font-size: .75em;
     color: $navColour;
-}
-
-.footerLink {
-    text-decoration: underline;
-    color: $navColour;
-    :hover { color: $navHoverColour; }
 }
 
 .footer {
@@ -97,7 +91,7 @@ body {
 }
 
 a {
-  transition: color 500ms;
+  transition: color 250ms ease-in-out;
   text-decoration: underline;
 }
 
