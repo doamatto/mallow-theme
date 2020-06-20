@@ -51,7 +51,9 @@
       text-decoration: none !important;
       color: $navColour;
     }
-    a:hover { color: $navHoverColour !important; }
+    a:hover {
+      color: $navHoverColour !important;
+    }
     h1 {
       font-weight: $font-bold;
       font-size: 1.25em;
