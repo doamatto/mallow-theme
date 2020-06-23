@@ -1,0 +1,23 @@
+{% if site.simpleanalytics == true %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://scripts.simpleanalyticscdn.com/latest.js">
+{% elsif site.fathomanalytics == true %}
+  {% if site.customfathomurl == "" %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.usefathom.com/script.js">
+  {% else %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://{{site.customfathomurl}}">
+  {% endif %}
+{% elsif site.matomoanalytics %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-qj/jwzjem2sfrDp/CEX8ODDzwfezTtpX43MRAcQTuUQ=' https://cdn.matomo.cloud/{{site.matomourl}}/matomo.js">
+{% elsif site.plausibleanalytics %}
+  {% if site.customplausibleurl == "" %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://plausible.io/js/plausible.js">
+  {% else %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' https://{{site.customplausibleurl}}/js/index.js">
+  {% endif %}
+{% endif %}
+
+{% if site.unsafecontent == false %}
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https://*">
+{% else %}
+<meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+{% endif %}

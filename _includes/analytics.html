@@ -1,0 +1,41 @@
+<!-- Analytics Start -->
+{% if site.simpleanalytics == true %}
+<script src="https://scripts.simpleanalyticscdn.com/latest.js" async defer></script>
+<noscript>
+  <img class="pxl" src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="">
+</noscript>
+{% elsif site.matomoanalytics == true %}
+<!-- Matomo -->
+<script>
+  var _paq = window._paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://{{site.matomourl}}/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '{{site.matomositeid}}']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src='https://cdn.matomo.cloud/{{site.matomourl}}/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+  <p>
+    <img class="pxl" src="https://{{site.matomourl}}/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="">
+  </p>
+</noscript>
+{% elsif site.fathomanalytics == true %}
+{% if site.customfathomurl != "" %}
+<script src="https://{{site.customfathomurl}}" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
+{% else %}
+<script src="https://cdn.usefathom.com/script.js" site="{{site.fathomsite}}" honor-dnt="true" async defer></script>
+{% endif %}
+{% elsif site.plausibleanalytics == true %}
+{% if site.customplausibleurl != "" %}
+<script data-domain="{{site.github.url}}" src="https://{{site.customplausibleurl}}/js/index.js" async defer></script>
+{% else %}
+<script data-domain="{{site.github.url}}" src="https://plausible.io/js/plausible.js" async defer></script>
+{% endif %}
+{% endif %}
+<!-- Analytics End -->

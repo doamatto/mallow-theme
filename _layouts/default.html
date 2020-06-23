@@ -1,21 +1,23 @@
-<!doctype html>
-{% if site.lang == "" %}
-<html>
-{% else %}
+<!doctype html>{% if site.lang != "" %}
 <html lang="{{site.lang}}">
+{% else %}
+<html>
 {% endif %}
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    {% include seo.html %}
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer, same-origin">
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-    {% if site.favicon %}
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    {% if site.favicon != "" %}
     <link rel="shortcut icon" href="{{ site.favicon }}">
     <link rel="icon" href="{{site.favicon}}">
     <link rel="apple-touch-icon" href="{{site.favicon}}">
     {% endif %}
-    {% include seo.html %}
+    {% include verifications.html %}
+    {% include csp.html %}
+    {% include analytics.html %}
   </head>
   <body>
     {{ content }}

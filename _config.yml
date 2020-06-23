@@ -8,6 +8,29 @@ author: "doamatto"
 favicon: "/assets/logo.svg"
 url: "https://doamatto.xyz/mallow-theme"
 
+# Setup site verifications: https://github.com/doamatto/jekylltemplate/wiki/Site-Verifications
+alexaverify: ""
+bingverify: ""
+dailyverify: ""
+googleverify: ""
+nortonverify: ""
+specificverify: ""
+pinverify: ""
+plingverify: ""
+wotverify: ""
+yandexverify: ""
+
+# Setup site analytics: https://github.com/doamatto/jekylltemplate/wiki/Analytics
+simpleanalytics: false 
+fathomanalytics: false
+fathomsite: ""
+customfathomurl: ""
+matomoanalytics: false
+matomositeid: ""
+matomourl: ""
+plausibleanalytics: false
+customplausibleurl: ""
+
 # Configure your navigation and footer links: https://github.com/doamatto/mallow-theme/wiki/Configuring-Navigation-and-Footer-Links
 navigation:
   - title: Home
@@ -23,18 +46,22 @@ webSource: "https://github.com/doamatto/mallow-theme"
 copyrightName: [ "doamatto" ]
 copyrightYear: [ "2018-2020" ]
 
-# Don't edit below this line
+# Don't edit below this line without knowing what you're doing
 exclude:
   - README.md
   - LICENSE
   - CNAME
   - Gemfile
   - Gemfile.lock
-  - nano.gemspec
   - .jekyll-cache
+
+feed:
+  excerpt_only: false
+  path: atom.xml
 
 plugins:
   - jekyll
+  - jekyll-feed
   - jekyll-sass-converter
   - jekyll-sitemap
   
