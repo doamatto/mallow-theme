@@ -15,6 +15,7 @@ Gem::Specification.new do |spec|
     "wiki_uri" => "https://github.com/doamatto/mallow-theme/wiki"
   }
   spec.files = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
+  spec.add_dependency "jekyll", "~> 4.0"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.13"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
-  spec.add_runtime_dependency "jekyll", "~> 4.0"
 end
