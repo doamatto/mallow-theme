@@ -1,8 +1,8 @@
 <div class="sidebar">
     <div>
-        <nav class="nav">
+        <nav>
             <a href="{{ '/' | relative_url }}"><h1>{{ site.title }}</h1></a>
-            <ul class="links">
+            <ul>
                 {% for item in site.navigation %}
                     {% if item.url contains '://' %}
                         {% assign url = item.url %}
@@ -14,7 +14,7 @@
             </ul>
         </nav>
         <div class="footer">
-            <p class="copyright">
+            <p>
                 &copy; {% if copyrightYear %}{{copyrightYear}}{% else %}{{ site.time | date: '%Y' }}{% endif %} {{ site.copyrightName }}.
                 <br />
                 {% if site.webSource %}
