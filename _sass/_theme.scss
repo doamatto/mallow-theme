@@ -8,12 +8,8 @@
         background: $LIGHTbgColour;
         color: $LIGHTtextColour;
     }
-    a {
-        color: $LIGHTlinkColour;
-    }
-    a:hover {
-        color: $LIGHTlinkHoverColour;
-    }
+    a { color: $LIGHTlinkColour; }
+    a:hover { color: $LIGHTlinkHoverColour; }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,12 +17,8 @@
         background: $DARKbgColour;
         color: $DARKtextColour;
     }
-    a {
-        color: $DARKlinkColour;
-    }
-    a:hover {
-        color: $DARKlinkHoverColour;
-    }
+    a { color: $DARKlinkColour; }
+    a:hover { color: $DARKlinkHoverColour; }
 
 }
 
@@ -51,9 +43,7 @@
       text-decoration: none !important;
       color: $navColour;
     }
-    a:hover {
-      color: $navHoverColour !important;
-    }
+    a:hover { color: $navHoverColour !important; }
     h1 {
       font-weight: $font-bold;
       font-size: 1.25em;
