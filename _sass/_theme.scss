@@ -39,16 +39,16 @@
   justify-content: center;
   align-items: center;
   max-width: 270px;
+  a {
+    text-decoration: none !important;
+    color: $navColour;
+  }
+  a:hover { color: $navHoverColour !important; }
   nav {
     ul {
       padding: 1vh 1vh 1vh 1vh;
       list-style: none;
     }
-    a {
-      text-decoration: none !important;
-      color: $navColour;
-    }
-    a:hover { color: $navHoverColour !important; }
     h1 {
       font-weight: $font-bold;
       font-size: 1.25em;
