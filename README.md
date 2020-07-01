@@ -6,7 +6,7 @@ Mallow is a simple one-pager theme that puts emphesis on simplicty and speed.
 
 **Why I highly suggest you don't use Mallow**
 
-You might think "Why would you, the person who made Mallow, tell me not to use Mallow?" It's actually really simple. I made this theme but designed it in a way that would make it horrible for anyone. I've spent about 2 months now trying different designs to get a mobile sidebar working (with and without JavaScript), but all of them go away from the main design of Mallow. For that reason, for anyone cares about mobile users and their ability to use the site, I cannot recommend you to use my theme. However, I can recommend the more mobile-friendly Jekyll theme I've made, [Nano](https://github.com/doamatto/nano); it's similar to Mallow and I personally use it as I don't think anything beats it (that I've released as a template, that is).
+You might think "Why would you, the person who made Mallow, tell me not to use Mallow?" It's actually really simple. I made this theme but designed it in a way that would make it horrible for anyone. I've spent about 2 months now trying different designs to get a mobile sidebar working (with and without JavaScript), but all of them go away from the main design of Mallow. For that reason, for anyone cares about mobile users and their ability to use the site, I cannot recommend you to use my theme. However, I can recommend the more mobile-friendly Jekyll theme I've made, [Nano](https://github.com/doamatto/nano); it's similar to Mallow and I personally use it as I don't think anything beats it (that I've released as a template, that is). **TL;DR is that this looks horrible on small screens and that you should use something else if you care about mobile users**.
 
 ## Installation
 
