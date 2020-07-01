@@ -4,41 +4,46 @@
 
 // Light and Dark Themes for Mobile
 @media (prefers-color-scheme: light) {
-    html {
-        background: $LIGHTbgColour;
-        color: $LIGHTtextColour;
-    }
-    a { color: $LIGHTlinkColour; }
-    a:hover { color: $LIGHTlinkHoverColour; }
+  html {
+  background: $LIGHTbgColour;
+  color: $LIGHTtextColour;
+  }
+  a { color: $LIGHTlinkColour; }
+  a:hover { color: $LIGHTlinkHoverColour; }
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        background: $DARKbgColour;
-        color: $DARKtextColour;
-    }
-    a { color: $DARKlinkColour; }
-    a:hover { color: $DARKlinkHoverColour; }
+  html {
+  background: $DARKbgColour;
+  color: $DARKtextColour;
+  }
+  a { color: $DARKlinkColour; }
+  a:hover { color: $DARKlinkHoverColour; }
 
 }
 
 // Site Header (_includes/site-header.html)
 
 .sidebar {
-    height: 100%;
-    width: 35vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding: 1vh 1vh 1vh 1vh;
-    background: $accentColour;
-    color: $headerTextColour;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 270px;
+  height: 100%;
+  width: 35vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 1vh 1vh 1vh 1vh;
+  background: $accentColour;
+  color: $headerTextColour;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  nav {
+    ul {
+      padding: 1vh 1vh 1vh 1vh;
+      list-style: none;
+    }
     a {
       text-decoration: none !important;
       color: $navColour;
@@ -49,37 +54,32 @@
       font-size: 1.25em;
       text-decoration: none !important;
     }
-}
-
-.links {
-  padding: 1vh 1vh 1vh 1vh;
-  list-style: none;
-}
-
-.copyright {
-    font-size: .75em;
-    color: $navColour;
+  }
 }
 
 .footer {
-    justify-content: left;
-    text-align: left;
+  justify-content: left;
+  text-align: left;
+  p {
+    font-size: .75em;
+    color: $navColour;
+  }
 }
 
 // Typography and Misc.
 
 body {
-    font-family: $font;
-    font-weight: $font-regular;
-    font-size: 1.125em;
-    margin: -20px 0px 8px 0px;
+  font-family: $font;
+  font-weight: $font-regular;
+  font-size: 1.125em;
+  margin: -20px 0px 8px 0px;
 }
 
 .container {
-    margin-left: 25vw;
-    padding: 1em 5em;
-    max-width: 65vw;
-    display: block;
+  margin-left: 25vw;
+  padding: 1em 5em;
+  max-width: 65vw;
+  display: block;
 }
 
 a {
